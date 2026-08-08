@@ -1,0 +1,60 @@
+# ==============================
+# Utilities
+# ==============================
+
+numpy
+# Numerical operations and handling arrays/matrices used in image and ML processing
+
+pandas
+# Managing attendance records and other structured/tabular data
+
+
+# ==============================
+# Machine Learning / Face Recognition
+# ==============================
+
+scikit-learn
+# Machine learning utilities such as preprocessing, similarity calculations,
+# model evaluation, and other ML tasks
+
+dlib-bin
+# Provides dlib's precompiled binaries for facial detection and face-related processing
+
+# Install the downloaded dlib wheel manually when required for Python 3.13 on Windows
+# python -m pip install dlib-20.0.99-cp313-cp313-win_amd64.whl
+
+git+https://github.com/ageitgey/face_recognition_models
+# Provides pretrained face-recognition model files used by the face_recognition library
+
+setuptools<70.0.0
+# Keeps setuptools below version 70 for compatibility with older face-recognition/dlib dependencies
+
+
+# ==============================
+# Database & Authentication
+# ==============================
+
+supabase
+# Connects AttendX to Supabase for storing and retrieving user and attendance data
+
+bcrypt
+# Securely hashes passwords so they are not stored as plain text
+
+
+# ==============================
+# QR / Image Processing
+# ==============================
+
+segno
+# Generates QR codes, useful for creating attendance or user verification QR codes
+
+pillow
+# Opens, processes, and manipulates images used by the face-recognition system
+
+
+# ==============================
+# Application / UI
+# ==============================
+
+streamlit
+# Builds the web interface for AttendX and connects the UI with the AI/attendance functionality
