@@ -81,6 +81,5 @@ webrtcvad-wheels
 typing
 # Provides the typing package required by the Resemblyzer package
 
-resemblyzer --no-deps
+resemblyzer
 # Generates speaker embeddings used for voice-based student identification
-# --no-deps prevents pip from installing the incompatible source-based webrtcvad package
