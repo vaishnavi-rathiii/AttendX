@@ -2,6 +2,14 @@
 # Utilities
 # ==============================
 
+
+# ==============================
+# Application / UI
+# ==============================
+
+streamlit
+# Builds the AttendX web interface and connects the UI with the AI and attendance functionality
+
 numpy
 # Numerical operations and handling arrays/matrices used in image and ML processing
 
@@ -14,20 +22,19 @@ pandas
 # ==============================
 
 scikit-learn
-# Machine learning utilities such as preprocessing, similarity calculations,
-# model evaluation, and other ML tasks
+# Machine learning utilities such as classification, preprocessing, and model prediction
 
 dlib-bin
-# Provides dlib's precompiled binaries for facial detection and face-related processing
+# Provides dlib's precompiled binaries for facial detection and face recognition processing
 
-# Install the downloaded dlib wheel manually when required for Python 3.13 on Windows
+# For Python 3.13 on Windows, install the downloaded dlib wheel manually when required
 # python -m pip install dlib-20.0.99-cp313-cp313-win_amd64.whl
 
 git+https://github.com/ageitgey/face_recognition_models
-# Provides pretrained face-recognition model files used by the face_recognition library
+# # Provides pretrained face-recognition model files used by the dlib face recognition system
 
-setuptools<70.0.0
-# Keeps setuptools below version 70 for compatibility with older face-recognition/dlib dependencies
+# setuptools<70.0.0
+# # Keeps setuptools below version 70 for compatibility with older face-recognition/dlib dependencies
 
 
 # ==============================
@@ -35,10 +42,10 @@ setuptools<70.0.0
 # ==============================
 
 supabase
-# Connects AttendX to Supabase for storing and retrieving user and attendance data
+# Connects AttendX to Supabase for storing and retrieving student, teacher, and attendance data
 
 bcrypt
-# Securely hashes passwords so they are not stored as plain text
+# Securely hashes and verifies passwords so they are not stored as plain text
 
 
 # ==============================
@@ -46,15 +53,19 @@ bcrypt
 # ==============================
 
 segno
-# Generates QR codes, useful for creating attendance or user verification QR codes
+# Generates QR codes for attendance or user verification
 
 pillow
-# Opens, processes, and manipulates images used by the face-recognition system
+# Opens, processes, and manipulates images used by the face recognition system
 
 
 # ==============================
-# Application / UI
+# Voice Recognition / Audio Processing
 # ==============================
 
-streamlit
-# Builds the web interface for AttendX and connects the UI with the AI/attendance functionality
+librosa
+# Loads and processes audio signals and extracts audio features for voice recognition
+
+# resemblyzer --no-deps
+# Generates speaker embeddings used for voice-based student identification
+
