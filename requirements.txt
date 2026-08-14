@@ -76,10 +76,10 @@ torchaudio
 # PyTorch audio processing utilities
 
 webrtcvad-wheels
-# Provides prebuilt WebRTC Voice Activity Detection binaries without requiring C++ compilation
+# Provides prebuilt WebRTC Voice Activity Detection binaries
 
 typing
-# Provides the typing package required by the Resemblyzer package
+# Provides the typing package required by Resemblyzer
 
 resemblyzer
 # Generates speaker embeddings used for voice-based student identification
