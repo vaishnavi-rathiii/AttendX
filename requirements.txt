@@ -66,6 +66,7 @@ pillow
 librosa
 # Loads and processes audio signals and extracts audio features for voice recognition
 
+resemblyzer
 # resemblyzer --no-deps
 # Generates speaker embeddings used for voice-based student identification
 
