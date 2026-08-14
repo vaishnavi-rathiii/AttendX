@@ -31,10 +31,10 @@ dlib-bin
 # python -m pip install dlib-20.0.99-cp313-cp313-win_amd64.whl
 
 git+https://github.com/ageitgey/face_recognition_models
-# # Provides pretrained face-recognition model files used by the dlib face recognition system
+# Provides pretrained face-recognition model files used by the dlib face recognition system
 
 # setuptools<70.0.0
-# # Keeps setuptools below version 70 for compatibility with older face-recognition/dlib dependencies
+# Keeps setuptools below version 70 for compatibility with older face-recognition/dlib dependencies
 
 
 # ==============================
@@ -66,7 +66,21 @@ pillow
 librosa
 # Loads and processes audio signals and extracts audio features for voice recognition
 
-resemblyzer
-# resemblyzer --no-deps
-# Generates speaker embeddings used for voice-based student identification
+soundfile
+# Reads and writes audio files used by the voice recognition pipeline
 
+torch
+# Deep learning framework required by Resemblyzer for speaker embeddings
+
+torchaudio
+# PyTorch audio processing utilities
+
+webrtcvad-wheels
+# Provides prebuilt WebRTC Voice Activity Detection binaries without requiring C++ compilation
+
+typing
+# Provides the typing package required by the Resemblyzer package
+
+resemblyzer --no-deps
+# Generates speaker embeddings used for voice-based student identification
+# --no-deps prevents pip from installing the incompatible source-based webrtcvad package
