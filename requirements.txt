@@ -78,8 +78,7 @@ torchaudio
 webrtcvad-wheels
 # Provides prebuilt WebRTC Voice Activity Detection binaries
 
-typing
-# Provides the typing package required by Resemblyzer
-
 resemblyzer
-# Generates speaker embeddings used for voice-based student identification
+# Generates speaker embeddings used for speaker identification
+
+setuptools==81.0.0
