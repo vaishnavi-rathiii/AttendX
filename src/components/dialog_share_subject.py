@@ -15,7 +15,7 @@ def share_subject_dialog(subject_name, subject_code):
     # Generate Class Join URL
     # ----------------------------------------
 
-    app_domain = "AttendX.streamlit.app"
+    app_domain = "https://attendx-ai.streamlit.app"
     join_url = f"{app_domain}/?join-code={subject_code}"
 
     st.header("Scan to Join")
